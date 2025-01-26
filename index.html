@@ -9,30 +9,30 @@
 </head>
 <body>
     <!-- Main Body where all the contents are stacked -->
-    <div class="main-container">
-        <p class="title">Password Generator</p>
+    <main class="main-container">
+        <header class="title">Password Generator</header>
         <button id="darkButton" onclick="dark_mode()">Dark Mode</button> <!--Dark Mode toggle button-->
         <div class="container">
             
-            <div id="passwordArea">
+            <section id="passwordArea">
                 <label for="passLength">Password Length </label>
                 <input type="number" id="passLength" value = 10 placeholder="Min. length is 8" min="8" max="25">
                 <!-- Area for writing the password length -->
                 <p class="description">*Length must be 8-25 characters when using arrow keys.</p>
-            </div>
+            </section>
    
-            <div id="types">
+            <section id="types">
                 <p class="passTypes">Type of Password</p>
                 <!-- All the buttons for changing the password type -->
                 <button onclick="strong()">Strong Password</button>
                 <button onclick="weak()">Weak Password</button>
                 <button onclick="superStrong()">Super Strong Password</button>
                 <button onclick="funny()">Funny Password</button>
-            </div>   
+            </section>   
         </div>
-    <!-- This button reload the page in order to enter a new password length -->
-    <button id="reloadButton">Reload</button>
-</div>
+        <!-- This button reload the page in order to enter a new password length -->
+        <button id="reloadButton">Reload</button>
+    </main>
 
     <script src="script.js"></script>
 </body>
