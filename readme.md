@@ -73,13 +73,9 @@ Password-Generator/
 
 
 ## Link
-The deployed site can be accessed here.
+You can also use the application using the deployed site that can be accessed here.
 
 
 ## Contributing
 
 Contributions are welcome! If you have any suggestions or improvements, feel free to fork this repository, make your changes, and submit a pull request.
-
----
-
-Enjoy using the Password Generator! 😊
