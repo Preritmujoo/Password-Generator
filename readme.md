@@ -66,14 +66,14 @@ Password-Generator/
 
 ### Light Theme
 
-
+![Light](https://github.com/user-attachments/assets/0454f798-b25e-44e9-990d-a2fdee0d4074)
 
 ### Dark Theme
 
-
+![Dark](https://github.com/user-attachments/assets/828ca17c-415f-4e81-bd57-43385994b09c)
 
 ## Link
-You can also use the application using the deployed site that can be accessed here.
+You can also use the application using the deployed site that can be accessed [here](https://password-generator-110.netlify.app/).
 
 
 ## Contributing
