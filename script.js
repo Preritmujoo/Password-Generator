@@ -24,7 +24,7 @@ class passWord{
 
     // In this method we randomly select one value from our funny password array
     funnyPass(){
-        let passwords = ["admin", "incorrect", "12345", "password", "qwerty", "homie", "jatt", "king", "queen", "prince", "princess", "handpump", "sweets", "tractor", "grass", "coffee", "teacher", "professor", "dashboard", "speed", "computer", "keyboard", "mouse", "monitor", "laptop", "desktop", "mobile", "phone", "charger", "earphones", "headphones", "speaker", "bluetooth", "wifi", "internet", "network", "server", "client", "database", "table", "row", "column", "query", "insert", "update", "delete", "select", "where", "from", "join", "inner", "outer", "left", "right", "full", "natural", "cross", "self", "union", "intersect", "except", "group", "having", "order", "escape", "discription", "limit", "offset", "fetch", "next", "first", "last", "summation", "average", "minimum", "maximum", "count", "distinct", "case", "when", "then", "else", "ending", "between", "like", "unlike", "similar", "platform", "true", "false", "unknown", "anything", "some", "exists", "unique", "primary", "foreign", "constraint", "check", "default", "index", "cluster", "hash", "bloom", "filter", "editing", "domain", "materialized", "function", "procedure", "trigger", "event", "listen", "notify", "rule", "policy", "role", "user", "login", "logout", "session", "transaction", "commit", "rollback", "savepoint", "isolation", "level", "serializable", "repeatable", "committed", "uncommitted", "write", "dirty", "read", "snapshot", "concurrency", "control"];
+        let passwords = ["admin", "incorrect", "password", "qwerty", "homie", "jatt", "king", "queen", "prince", "princess", "handpump", "sweets", "tractor", "grass", "coffee", "teacher", "professor", "dashboard", "speed", "computer", "keyboard", "mouse", "monitor", "laptop", "desktop", "mobile", "phone", "charger", "earphones", "headphones", "speaker", "bluetooth", "wifi", "internet", "network", "server", "client", "database", "table", "row", "column", "query", "insert", "update", "delete", "select", "where", "from", "join", "inner", "outer", "left", "right", "full", "natural", "cross", "self", "union", "intersect", "except", "group", "having", "order", "escape", "discription", "limit", "offset", "fetch", "next", "first", "last", "summation", "average", "minimum", "maximum", "count", "distinct", "case", "when", "then", "else", "ending", "between", "like", "unlike", "similar", "platform", "true", "false", "unknown", "anything", "some", "exists", "unique", "primary", "foreign", "constraint", "check", "default", "index", "cluster", "hash", "bloom", "filter", "editing", "domain", "materialized", "function", "procedure", "trigger", "event", "listen", "notify", "rule", "policy", "role", "user", "login", "logout", "session", "transaction", "commit", "rollback", "savepoint", "isolation", "level", "serializable", "repeatable", "committed", "uncommitted", "write", "dirty", "read", "snapshot", "concurrency", "control"];
         
         return passwords[Math.floor(Math.random() * passwords.length)];
     }
@@ -98,8 +98,14 @@ document.getElementById("reloadButton").addEventListener('click', ()=>{
     window.location.reload(); // It will reload the page
 })
 
-// This function is for adding or removing dark mode class
+// This function is for changing the theme of the page
 function dark_mode(){
-    document.body.classList.toggle("dark-mode"); 
-    // It is used to toggle class (like removing it, if it is availabe and adding it, if it is not available)
+    let theme = document.getElementById("theme")
+
+    if(theme.getAttribute("href") ==="style1.css"){
+        theme.href = "style2.css"
+    }
+    else{
+        theme.href = "style1.css"
+    }
 }
