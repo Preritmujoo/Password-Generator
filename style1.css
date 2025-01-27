@@ -44,14 +44,13 @@ body{
     display: flex;
     align-items: center;
     justify-content: space-around;
-    gap: 1.5rem;
 }
 
 /* Left Portion where we have to add password length */
 #passwordArea{
     display: flex;
     flex-direction: column;
-    row-gap: 1rem;
+    row-gap: 0.6rem;
     font-size: 1.25rem;
     font-weight: 600;
     text-align: center;
@@ -65,7 +64,6 @@ body{
 #passSpan{
     border-radius: 4px;
     border: none;
-    margin: 0.5rem;
     color: var(--password-text);
     font-family: "Overpass Mono", serif;
     font-optical-sizing: auto;
@@ -102,19 +100,19 @@ body{
 .description{
     font-size: 0.7rem;
     color: black;
-    transition: color 0.5s ease;
+    transition: all 0.5s ease;
 }
 
 #generateButton{
     align-self: center;
+    margin: 0;
 }
 
 /* Right portion where we have to select types */
 #types{
     text-align: center;
     display: grid;
-    gap: 1.1rem 1.1rem;
-    margin: 1.5rem 0;
+    margin: 1.3rem 0;
     animation: rightMoveIn 0.6s linear;
 }
 
@@ -134,6 +132,7 @@ body{
     text-align: center;
     font-weight: 600;
     font-size: 1.25rem;
+    margin: 0.5rem;
 }
 
 #reloadButton{
@@ -144,6 +143,7 @@ body{
 button{
     background-color: var(--primary-color);
     color: white;
+    margin: 0.5rem;
     border: none;
     padding: 0.5rem 1.5rem;
     font-size: 1.2rem;
