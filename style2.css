@@ -179,6 +179,10 @@ button:active{
         margin: 1.5rem;
     }
 
+    .description{
+        display: none;
+    }
+
     @keyframes rightMoveIn {
         from{
             opacity: 0;
