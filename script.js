@@ -19,7 +19,7 @@ class passWord{
     }
 
     superStrongPass(num){
-        return this.generatePassword(num, "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ!@#$%^&*()-_+|/?.,><~`")
+        return this.generatePassword(num, "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ!@#$%^&*()-_+|/?.,>")
     }
 
     // In this method we randomly select one value from our funny password array
