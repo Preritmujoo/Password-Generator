@@ -11,7 +11,7 @@ class passWord{
 
     // Calling generatePassword() to return specific type of password
     strongPass(num){
-        return this.generatePassword(num, "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890")
+        return this.generatePassword(num, "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890@#$%")
     }    
 
     weakPass(num){
