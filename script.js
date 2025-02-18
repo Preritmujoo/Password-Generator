@@ -11,15 +11,15 @@ class passWord{
 
     // Calling generatePassword() to return specific type of password
     strongPass(num){
-        return this.generatePassword(num, "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ")
+        return this.generatePassword(num, "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890")
     }    
 
     weakPass(num){
-        return this.generatePassword(num, "abcdefghijklmnopqrstuvwxyz")
+        return this.generatePassword(num, "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ")
     }
 
     superStrongPass(num){
-        return this.generatePassword(num, "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ!@#$%^&*()-_+|/?.,>")
+        return this.generatePassword(num, "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890!@#$%^&*()-_+|/?.,>")
     }
 
     // In this method we randomly select one value from our funny password array
