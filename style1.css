@@ -46,6 +46,15 @@ body{
     justify-content: space-around;
 }
 
+@keyframes fadeIn{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
 /* Left Portion where we have to add password length */
 #passwordArea{
     display: flex;
@@ -55,6 +64,7 @@ body{
     font-weight: 600;
     text-align: center;
     align-items: center;
+    animation: fadeIn 0.5s ease-in;
 }
 
 .copyText{
@@ -160,6 +170,38 @@ button:hover{
 
 button:active{
     opacity: 0.7;
+}
+
+.tooltip-container {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+}
+
+.tooltip-container button{
+    width: 100%;
+}
+
+.tooltip-container .tooltip-text {
+    visibility: hidden;
+    opacity: 0;
+    background-color: #000000b8;
+    color: #fff;
+    font-size: 12px;
+    text-align: center;
+    border-radius: 5px;
+    padding: 4px;
+    position: absolute;
+    z-index: 1;
+    bottom: 80%;
+    left: 10%;
+    transition: all 0.5s ease;
+}
+
+.tooltip-container:hover .tooltip-text {
+    visibility: visible;
+    opacity: 1;
+    transition-delay: 0.7s;
 }
 
 @media all and (max-width: 800px) {

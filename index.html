@@ -24,10 +24,25 @@
             <section id="types">
                 <p class="passTypes">Type of Password</p>
                 <!-- All the buttons for changing the password type -->
-                <button onclick="strong()">Strong Password</button>
-                <button onclick="weak()">Weak Password</button>
-                <button onclick="superStrong()">Super Strong Password</button>
-                <button onclick="funny()">Funny Password</button>
+                <div class="tooltip-container">
+                    <button onclick="strong()">Strong Password</button>
+                    <span class="tooltip-text">Includes uppercase, lowercase, numbers, and symbols</span>
+                </div>
+
+                <div class="tooltip-container">
+                    <button onclick="weak()">Weak Password</button>   
+                    <span class="tooltip-text">Only contains uppercase and lowercase letters</span>
+                </div>
+                
+                <div class="tooltip-container">
+                    <button onclick="superStrong()">Super Strong Password</button>
+                    <span class="tooltip-text">Includes letters, numbers, symbols, and extra special characters</span>
+                </div>
+
+                <div class="tooltip-container">
+                    <button onclick="funny()">Funny Password</button>
+                    <span class="tooltip-text">Combination of Silly words or common phrases</span>
+                </div>
             </section>   
         </div>
         <!-- This button reload the page in order to enter a new password length -->
